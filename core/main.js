@@ -1,9 +1,6 @@
 /*
-
-	Hivext Technologies
-
-    Title: Http_Headers
-    http://en.wikipedia.org/wiki/List_of_HTTP_headers
+	Title: Http_Headers
+	http://en.wikipedia.org/wiki/List_of_HTTP_headers
 */
 
 hivext.local.SetHeader("Content-Type", "text/html");
