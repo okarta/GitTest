@@ -1,0 +1,270 @@
+#global {
+	/*margin: 10px 64px;*/
+}
+
+body {
+	font-family: "Lucida Grande", Tahoma, Verdana, Arial, Sans-Serif;
+	font-size: 12px;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+select, input, textarea {
+	font-family: "Lucida Grande", Tahoma, Verdana, Arial, Sans-Serif;
+	font-size: 12px;
+	margin: 0px;
+	padding: 1px;
+}
+
+.response {
+	width: 100%;
+	min-height: 80px;
+	border: none;
+	padding: 2px;
+	font-family: "Courier New", "Times New Roman", monospace;
+	white-space: nowrap;
+}
+
+.client-methods {}
+
+h2, h4 {
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+hr {
+	height: 1px;
+	color: #ccc;
+	background-color: #ccc;
+	border: 0;
+	margin: .2em 0 .2em 0;
+}
+
+a {
+	color: #1b4caf;
+	outline-style: none;
+	outline-width: medium;
+	text-decoration: none;
+	background: none;
+}
+
+a:visited, a:active {
+	color: #1b4caf;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+ul {
+	list-style-type: square;
+	margin-top: 6px;
+	margin-left: 32px;
+	padding: 0px;
+}
+
+li {
+	margin-top: 6px;
+}
+
+#error {
+	border: 1px solid #ff5050;
+	background-color: #ffc5b5;
+	padding: 4px 10px;
+	display: none;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#header {
+	background: transparent url(images/header.png) repeat-x left;
+	border-bottom: 1px solid #303050;
+	padding: 12px;
+	color: #fff;
+}
+
+#column-content {
+	width: 100%;
+	float: right;
+	margin: 0 0 0 0px;
+	padding: 0;
+}
+
+#content {
+	margin: 0 100px;
+	position: relative;
+	z-index: 2;
+}
+
+#column-one {
+	width: 160px;
+}
+
+#content-header {
+	background: transparent url(images/content-header.png) repeat-x left;
+	border-bottom: 1px solid #c0c0c0;
+	padding: 8px 0px 8px 12px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #555;
+}
+
+#content-body {
+	padding: 16px;
+}
+
+#client-content {
+	display: none;
+	padding-top: 12px;
+}
+
+#footer {
+	background: transparent url(images/footer.png) repeat-x left;
+	margin-top: 10px;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #f0f0f0;
+	font-size: 11px;
+}
+
+#footer ul {
+	list-style: none;
+	margin: 10px 100px;
+}
+
+#footer li {
+	display: inline;
+	margin-right: 12px;
+	overflow: visible;
+}
+
+#footer li.selected {
+	border-color: #fabd23;
+	padding: 8px;
+	font-weight: bold;
+}
+
+#footer li a {
+	color: #002bb8;
+	border: none;
+	position: relative;
+	z-index: 0;
+	margin: 0;
+}
+
+#services {
+	/*border-bottom: 1px solid #ccc;*/
+}
+
+#services ul {
+	list-style: none;
+}
+
+#services li {
+	display: inline;
+}
+
+#services li a {}
+
+#services li a:hover {}
+
+#appid-add-block {
+	display: none;
+	margin-top: 8px;
+	margin-right: 12px;
+}
+
+#appid-add-block input {
+	/*font-size: 10px;*/
+	width: 246px;
+}
+
+#appid-add-block a {
+	font-size: 10px;
+	color: #fff;
+}
+
+.hivext-table {
+	width: 100%;
+	/*font-size: 14px;*/
+	background-color: white;
+	border-width: 0 0 1px 1px;
+	border-style: solid;
+	border-color: #8a97ba;
+}
+
+.hivext-table th, 
+.hivext-table td {
+	border-color: #8a97ba;
+	border-width: 1px 1px 0 0;
+	border-style: solid;
+	margin: 0;
+	padding: 6px 10px;
+}
+
+.hivext-table th {
+	background: transparent url(images/content-header.png) repeat-x left;	
+	font-weight: normal;
+	font-style: normal;
+	text-align: left;
+}
+
+div.code-show {
+	margin: 6px 6px;
+	/*border: 1px dashed #8a97ba;*/
+}
+
+div.code-show > div.code-header {
+	background: transparent url(images/minus.png) no-repeat left;
+	background-position: 4px center;
+	background-color: #e8eaf2;
+	padding: 4px 8px;
+	padding-left: 26px;
+	cursor: pointer;
+}
+
+div.code-show > div.code-sample {
+	overflow: visible;
+	padding: 4px 12px;
+	/*font-size: 10px;*/
+}
+
+div.code-hide {
+	margin: 6px 6px;
+	/*border: 1px dashed #8a97ba;*/
+}
+
+div.code-hide > div.code-header {
+	background: transparent url(images/plus.png) no-repeat left;
+	background-position: 4px center;
+	background-color: #e8eaf2;
+	padding: 4px 8px;
+	padding-left: 26px;
+	cursor: pointer;
+}
+
+div.code-hide > div.code-sample {
+	display: none;
+}
+
+.textarea-resizer {
+	-moz-user-select: none;
+	height: 4px;
+	background: #eee;
+	cursor: s-resize;
+}
+
+#developer-welcome {
+	padding-bottom: 4px;
+}

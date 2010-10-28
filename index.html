@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>API Консоль</title>
+
+<link href="apiconsole.css" rel="stylesheet" type="text/css" />
+
+<script src="http://code.hivext.ru/frameworks/js/core.js" type="text/javascript"></script>
+<script src="http://api.hivext.ru/1.0/users/registration.js" type="text/javascript"></script>
+<script src="http://api.hivext.ru/1.0/users/authentication.js" type="text/javascript"></script>
+<script src="http://api.hivext.ru/1.0/users/account.js" type="text/javascript"></script>
+<script src="http://api.hivext.ru/1.0/development/applications.js" type="text/javascript"></script>
+<script src="http://api.hivext.ru/1.0/development/scripting.js" type="text/javascript"></script>
+<script src="http://api.hivext.ru/1.0/data/base.js" type="text/javascript"></script>
+<script src="http://api.hivext.ru/1.0/security/accesscontrol.js" type="text/javascript"></script>
+<script src="http://api.hivext.ru/1.0/storage/uploader.js" type="text/javascript"></script>
+<script src="http://api.hivext.ru/1.0/utils/batch.js" type="text/javascript"></script>
+<script src="http://api.hivext.ru/1.0/utils/scheduler.js" type="text/javascript"></script>
+<script src="http://api.hivext.ru/1.0/system/cluster.js" type="text/javascript"></script>
+<script src="http://api.hivext.ru/1.0/system/groups.js" type="text/javascript"></script>
+<script src="http://api.hivext.ru/1.0/system/usage.js" type="text/javascript"></script>
+
+<script src="utils.js" type="text/javascript"></script>
+<script src="apiconsole.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+//
+// Entry point.
+//
+
+function main() {
+
+	APIConsole("1dd8d191d38fff45e62564fcf67fdcd6");
+
+}
+
+</script>
+
+<body onload="main()">
+
+<div id="global">
+
+<div id="error"></div>
+
+<div id="header">
+
+<table width="100%">
+<tr>
+<td>
+	<div><h2>API Консоль</h2></div>
+</td>
+<td align="right">
+<div>
+	<div id="developer-welcome"></div>
+	<div>
+		Активный идентификатор&nbsp;
+		<select style="width: 250px;" id="appid-list"></select>
+		<a id="appid-add" href="javascript:void(0)" title="Добавить идентификатор" style="color: #fff;">+</a>
+		<div id="appid-add-block">
+			<input id="appid-add-value" />
+			<div align="right"><a id="appid-add-ok" href="javascript:void(0)">Добавить</a>&nbsp;|&nbsp;<a id="appid-add-cancel" href="javascript:void(0)">Отмена</a>
+			</div>
+		</div>
+	</div>
+</div>
+</td>
+</tr>
+</table>
+
+</div> 
+
+
+</div> <!-- header -->
+
+<div id="column-content">
+
+<div id="content">
+
+<div id="content-body">
+
+Доступные сервисы:&nbsp;
+<select id="services-list">
+  <option value="">Выберите сервис</option>
+  <option value="Users.Registration">Регистрация</option>
+  <option value="Users.Authentication">Идентификация и аутентификация</option>
+  <option value="Users.Account">Управление аккаунтом</option>
+  <option value="Development.Applications">Управление приложениями</option>
+  <option value="Development.Scripting">Скриптинг серверной логики</option>
+  <option value="Data.Base">Сервис структур</option>
+  <option value="Security.AccessControl">Управление доступом</option>
+  <option value="Storage.Uploader">Файловое хранилище</option>
+  <option value="Utils.Batch">Пакетные вызовы</option>
+  <option value="Utils.Scheduler">Планировщик</option>
+  <option value="System.Usage">Мониторинг ресурсов</option>
+  <option value="System.Cluster">Кластер [системный сервис]</option>
+  <option value="System.Groups">Группы [системный сервис]</option>
+</select>
+
+<div id="client-content">
+
+<hr /><br>
+
+<table>
+<tr>
+<td>Адрес сервиса:</td>
+<td><input id="client-platform-url" style="width: 160px" />&nbsp;+&nbsp;<input id="client-service-url" style="width: 240px" /></td>
+<td>
+<input id="client-service-change-url" type="button" value="Изменить адрес" />&nbsp;
+<input id="client-service-default-url" type="button" value="По умолчанию" />&nbsp;
+<input id="http-method-switcher" type="button" value="POST" style="display: none;" />
+</td>
+</tr>
+</table>
+<br />
+<div id="client-operations">
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+
+<ul>
+<li><a href="http://www.hivext.ru" target="_blank">&copy; 2010 Hivext</a></li>
+<li><a href="javascript:void(0)">Условия использования</a></li>
+<li><a href="http://doc.hivext.ru/index.php/Веб_сервисы" target="_blank">Документация</a></li>
+<li><a href="http://code.hivext.ru/development/ApplicationManager/" target="_blank">Управление приложениями</a></li>
+</ul>
+
+</div>
+
+</div> <!-- column-content -->
+
+</div> <!-- global -->
+
+</body>
+
+</html>
