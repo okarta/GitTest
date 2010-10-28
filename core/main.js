@@ -1,4 +1,7 @@
 /*
+
+	Hivext Technologies
+
     Title: Http_Headers
     http://en.wikipedia.org/wiki/List_of_HTTP_headers
 */
@@ -16,7 +19,3 @@ sRequestInfo += "Host = " + hivext.local.GetHeader("Host") + "<br />";
 sRequestInfo += "--------------------------------------------------------------<br />";
 
 return sRequestInfo;
-
-
-test
-test
