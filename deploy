@@ -1,4 +1,4 @@
 git add .
 git commit -m "hivext"
 git push hivext master
-echo 1qazxsw2
+1qazxsw2
