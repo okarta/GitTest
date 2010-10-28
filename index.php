@@ -2,6 +2,8 @@
 
     /*
         Name: GetUsersJoinCountryAndCity
+        
+        Autor: m007
 
         Data model:
 
